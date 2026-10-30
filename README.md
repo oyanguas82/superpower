@@ -109,6 +109,12 @@ Se comprobó la estructura con el validador de habilidades, se verificaron los 1
 
 Estas comprobaciones validan estructura e integridad; el comportamiento en cada proyecto se verifica durante su uso.
 
+## Comparación del ZIP adicional
+
+Se revisó `superpowers.zip` frente al archivo usado para crear esta adaptación. Ambos contienen Superpowers `7.0.1`, con los mismos 231 archivos de contenido y los mismos 15 flujos. Las diferencias son finales de línea en 29 archivos y 28 archivos internos de Git.
+
+La [comparación detallada](docs/comparacion-superpowers.md) incluye las huellas SHA-256 y el método de revisión. Se actualizó la procedencia de la habilidad instalada y publicada para registrar esta fuente adicional.
+
 ## Origen y licencia
 
 Adaptación basada en el archivo `superpowers-main.zip` proporcionado para este trabajo, cuya versión declarada es `7.0.1`.

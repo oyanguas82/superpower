@@ -38,3 +38,13 @@ SHA-256 del ZIP de origen: `d06a326ee189068b1aa0956452c259d39a66f5ff76ae9f0f7ece
 - Se conserva el aislamiento útil y la trazabilidad de tareas, sin commits, limpieza de espacios, publicaciones ni envíos automáticos.
 - No se incorporaron hooks de inicio, servidores visuales, telemetría, extensiones para otras plataformas ni ejecutables Bash del ZIP. Los procedimientos usan las herramientas disponibles en el entorno de destino.
 - La atribución y el mapa de origen son documentación de procedencia; solo hace falta leerlos al revisar o mantener esta adaptación.
+
+## Verificación de fuente adicional
+
+El 2026-10-29 se comparó el archivo `superpowers.zip` proporcionado por el usuario con la fuente inicial. Ambos declaran la versión `7.0.1` y contienen los mismos 231 archivos de contenido. Los 15 archivos de entrada de las habilidades originales coinciden byte a byte.
+
+SHA-256 del ZIP adicional: `a7da8c8c422e58f9953a54a8b8de3e4828d4a5ad8e372b7c9821b72335d5b495`.
+
+Las únicas diferencias de contenido binario se deben a finales de línea en 29 archivos. El ZIP adicional también incluye 28 archivos internos de `.git/`, excluidos de la instalación y de la publicación. No se identificaron nuevos flujos que incorporar a esta adaptación.
+
+El informe de comparación se encuentra en el repositorio de distribución, en `docs/comparacion-superpowers.md`. Esta actualización registra la fuente adicional sin alterar los procedimientos ni la política de invocación de la habilidad.
