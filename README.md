@@ -8,27 +8,32 @@ El proceso se ajusta al trabajo: una corrección pequeña puede resolverse direc
 
 ## Estado de distribución
 
-Este repositorio contiene la documentación y la licencia. La habilidad se distribuye actualmente mediante el paquete `superpowers-codex.zip`, generado por separado. Los archivos de la habilidad todavía no están versionados en este repositorio; para instalarla se necesita ese paquete o su carpeta `superpowers`.
+Este repositorio incluye la habilidad completa en la carpeta [`superpowers`](superpowers/SKILL.md), junto con sus referencias y metadatos. Puedes obtenerla clonando el repositorio o [descargando su ZIP](https://github.com/oyanguas82/superpower/archive/refs/heads/main.zip).
 
 ## Qué incluye
 
 | Flujo | Para qué sirve |
 |---|---|
-| Diseño y planificación | Aclarar requisitos, comparar alternativas y convertir decisiones en tareas comprobables. |
-| Ejecución y pruebas | Implementar un plan, conservar el progreso y comprobar comportamientos relevantes. |
-| Depuración sistemática | Reproducir un fallo, investigar su origen y verificar la corrección. |
-| Revisión y entrega | Contrastar el cambio con los requisitos, atender observaciones y preparar una entrega verificable. |
-| Aislamiento y colaboración | Organizar espacios de trabajo y coordinar agentes cuando esa modalidad esté autorizada. |
-| Diagnóstico de sesiones | Investigar repeticiones, desviaciones del plan y consumo de recursos con evidencia. |
-| Autoría de habilidades | Crear o mejorar habilidades y evaluar si ayudan a tomar mejores decisiones. |
+| [Diseño y planificación](superpowers/references/diseno-planificacion.md) | Aclarar requisitos, comparar alternativas y convertir decisiones en tareas comprobables. |
+| [Ejecución y pruebas](superpowers/references/ejecucion-pruebas.md) | Implementar un plan, conservar el progreso y comprobar comportamientos relevantes. |
+| [Depuración sistemática](superpowers/references/depuracion.md) | Reproducir un fallo, investigar su origen y verificar la corrección. |
+| [Revisión y entrega](superpowers/references/revision-entrega.md) | Contrastar el cambio con los requisitos, atender observaciones y preparar una entrega verificable. |
+| [Aislamiento y colaboración](superpowers/references/colaboracion.md) | Organizar espacios de trabajo y coordinar agentes cuando esa modalidad esté autorizada. |
+| [Diagnóstico de sesiones](superpowers/references/diagnostico-sesiones.md) | Investigar repeticiones, desviaciones del plan y consumo de recursos con evidencia. |
+| [Autoría de habilidades](superpowers/references/autoria-habilidades.md) | Crear o mejorar habilidades y evaluar si ayudan a tomar mejores decisiones. |
 
 Las referencias se cargan según la necesidad de la tarea, en lugar de incorporar todos los procedimientos al mismo tiempo.
 
-## Instalación desde el paquete
+## Instalación
 
-1. Obtén el archivo `superpowers-codex.zip` generado para esta adaptación y descomprímelo.
-2. Localiza la carpeta `superpowers`. En su interior deben estar `SKILL.md`, `agents`, `references` y `LICENSE`.
-3. Copia la carpeta completa a tu directorio personal de habilidades de Codex.
+1. [Descarga el repositorio como ZIP](https://github.com/oyanguas82/superpower/archive/refs/heads/main.zip) y descomprímelo, o clónalo:
+
+   ```bash
+   git clone https://github.com/oyanguas82/superpower.git
+   ```
+
+2. Dentro del repositorio descargado, localiza la carpeta `superpowers`. En su interior deben estar `SKILL.md`, `agents`, `references` y `LICENSE`.
+3. Copia únicamente esa carpeta completa a tu directorio personal de habilidades de Codex.
 
 Ubicación predeterminada en Windows:
 
@@ -77,7 +82,7 @@ La habilidad también conserva la selección automática predeterminada según s
 - Usar las herramientas disponibles y respetar la autorización concreta para delegar, publicar o modificar recursos.
 - Vincular las afirmaciones de éxito con comprobaciones realizadas y comunicar las limitaciones materiales.
 
-## Estructura del paquete
+## Estructura de la habilidad
 
 ```text
 superpowers/
@@ -96,7 +101,7 @@ superpowers/
     └── procedencia.md
 ```
 
-El paquete contiene 11 archivos y un único punto de entrada `SKILL.md`. La referencia de procedencia documenta la correspondencia de los 15 flujos originales y las decisiones de adaptación.
+La carpeta `superpowers` contiene 11 archivos y un único punto de entrada [`SKILL.md`](superpowers/SKILL.md). La [referencia de procedencia](superpowers/references/procedencia.md) documenta la correspondencia de los 15 flujos originales y las decisiones de adaptación.
 
 ## Validación de la adaptación inicial
 
@@ -110,4 +115,4 @@ Adaptación basada en el archivo `superpowers-main.zip` proporcionado para este 
 
 Proyecto de origen: [obra/superpowers](https://github.com/obra/superpowers), de Jesse Vincent. Esta distribución es una adaptación independiente para Codex.
 
-La documentación de este repositorio se publica bajo [licencia MIT](LICENSE). El paquete de la habilidad conserva el aviso MIT original de Jesse Vincent en su propio archivo `LICENSE`.
+La documentación de este repositorio se publica bajo [licencia MIT](LICENSE). La habilidad conserva el aviso MIT original de Jesse Vincent en [`superpowers/LICENSE`](superpowers/LICENSE).
